@@ -1,7 +1,7 @@
 import {
   Instagram,
   Mail,
-  Globe,
+  Link,
   Building2,
   Linkedin,
   type LucideIcon,
@@ -30,14 +30,14 @@ export const socialLinks: LinkConfig[] = [
     variant: "primary",
   },
   {
-    label: "Portfolio",
-    href: "https://www.berkcanMillihuzin.de",
-    icon: Globe,
+    label: "Meine Links",
+    href: "/Test", // Hier später den Amazon-Link eintragen.
+    icon: Link,
     variant: "primary",
   },
   {
     label: "LinkedIn",
-    href: "https://www.linkedin.com/in/Alanur-Millihuzin/",
+    href: "https://www.linkedin.com/in/alanur-millihuzin-1aa8bb394/",
     icon: Linkedin,
     variant: "primary",
   },

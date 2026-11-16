@@ -53,12 +53,12 @@ export const LinkButton = ({
       }}
       className={`
         group relative flex w-full items-center justify-between gap-3 overflow-hidden
-        rounded-2xl px-6 py-4 shadow-md transition-all duration-300
-        hover:shadow-xl focus-visible:shadow-xl
+        rounded-full px-6 py-4 transition-all duration-300
+        hover:shadow-md focus-visible:shadow-md
         ${
           isPrimary
-            ? "bg-gradient-to-r from-rose-500 to-pink-500 text-white hover:from-rose-600 hover:to-pink-600"
-            : "border-2 border-gray-200 dark:border-gray-700 bg-white dark:bg-gray-800 text-gray-900 dark:text-white hover:border-rose-500 dark:hover:border-rose-500"
+            ? "profile-link-primary text-white"
+            : "profile-link-secondary border text-[#6e4657] dark:text-rose-100"
         }
       `}
       aria-label={`${label} öffnen`}
@@ -78,13 +78,13 @@ export const LinkButton = ({
         transition={{ duration: 0.5 }}
       >
         <Icon
-          size={24}
-          className={isPrimary ? "text-white" : "text-rose-500"}
+          size={21}
+          className={isPrimary ? "text-white" : "text-[#97536b] dark:text-rose-200"}
         />
       </motion.div>
 
       {/* Label */}
-      <span className="relative z-10 flex-1 text-left font-semibold">
+      <span className="relative z-10 flex-1 text-left font-medium">
         {label}
       </span>
 

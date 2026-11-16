@@ -82,7 +82,7 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
         initial={{ scale: 0 }}
         animate={{ scale: 1 }}
         transition={{ delay: 0.2, type: "spring", stiffness: 200 }}
-        className="relative mx-auto mb-6 flex h-24 w-24 translate-x-2 translate-y-2 items-center justify-center overflow-hidden rounded-full shadow-xl ring-4 ring-rose-100 dark:ring-rose-900/60"
+        className="relative mx-auto mb-6 flex h-32 w-32 items-center justify-center overflow-hidden rounded-full shadow-[0_12px_32px_rgba(134,77,94,0.16)] ring-[6px] ring-white dark:ring-[#50323f]"
       >
         <span
           className="pointer-events-none absolute -inset-2 -z-10 rounded-full bg-gradient-to-br from-rose-200/70 via-pink-200/50 to-fuchsia-200/60 blur-md"
@@ -91,8 +91,8 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
         <Image
           src="/alanur_bild.jpg"
           alt="Alanur Atesoglu"
-          width={96}
-          height={96}
+          width={128}
+          height={128}
           className="h-full w-full object-cover object-[center_20%]"
           priority
         />
@@ -103,7 +103,7 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 0.3 }}
-        className="mb-3 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white"
+        className="profile-name mb-3 text-6xl font-normal tracking-tight"
       >
         Alanur<span className="text-rose-500">.</span>
       </motion.h1>
@@ -115,7 +115,7 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
         transition={{ delay: 0.4 }}
         className="mb-4 px-4 text-base text-gray-600 dark:text-gray-300"
       >
-        <TypingEffect words={roles} className="text-rose-500 font-semibold" />
+        <TypingEffect words={roles} className="text-[#97536b] dark:text-rose-200 font-medium" />
       </motion.div>
 
       {/* Interest badges */}
@@ -127,7 +127,7 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
       >
         <span className="rounded-full bg-rose-100 dark:bg-rose-900/50 text-rose-600 dark:text-rose-300 px-3 py-1">Soziologie</span>
         <span className="rounded-full bg-pink-100 dark:bg-pink-900/50 text-pink-600 dark:text-pink-300 px-3 py-1">Marketing</span>
-        <span className="rounded-full bg-fuchsia-100 dark:bg-fuchsia-900/50 text-fuchsia-600 dark:text-fuchsia-300 px-3 py-1">Social Media</span>
+        <span className="rounded-full bg-[#eee7ed] dark:bg-[#493443] text-[#77556d] dark:text-[#e7c9df] px-3 py-1">Social Media</span>
       </motion.div>
 
       {/* Decorative line */}
@@ -135,7 +135,7 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
         initial={{ scaleX: 0 }}
         animate={{ scaleX: 1 }}
         transition={{ delay: 0.6, duration: 0.5 }}
-        className="mx-auto mt-6 h-1 w-16 rounded-full bg-gradient-to-r from-rose-500 via-pink-500 to-fuchsia-500"
+        className="mx-auto mt-7 h-px w-24 bg-gradient-to-r from-transparent via-[#bb8b91] to-transparent"
       />
 
       {/* CTA Section */}
@@ -146,7 +146,7 @@ export const ProfileCard = ({ onContactClick }: ProfileCardProps) => {
         whileHover={{ scale: 1.02 }}
         whileTap={{ scale: 0.98 }}
         onClick={onContactClick}
-        className="mt-8 w-full rounded-xl bg-gradient-to-br from-rose-50 to-pink-50 dark:from-rose-900/30 dark:to-pink-900/30 p-4 border border-rose-100 dark:border-rose-800 cursor-pointer text-left transition-colors"
+        className="profile-contact mt-7 w-full rounded-2xl p-5 border cursor-pointer text-center transition-colors"
       >
         <p className="text-sm text-gray-600 dark:text-gray-300 mb-2">
           Lass uns vernetzen und austauschen.

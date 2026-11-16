@@ -26,3 +26,63 @@
     text-wrap: balance;
   }
 }
+
+@layer components {
+  .profile-page {
+    background: radial-gradient(ellipse at 12% 15%, #f1dce2 0, transparent 48%),
+      radial-gradient(ellipse at 90% 85%, #e9dfe9 0, transparent 45%), #faf5ef;
+    color: #513b46;
+  }
+
+  .profile-panel {
+    background: rgba(255, 252, 249, 0.94);
+    border: 1px solid #ffffff;
+    box-shadow: 0 24px 80px #79526314, 0 2px 8px #79526308;
+  }
+
+  .profile-name {
+    font-family: Georgia, "Times New Roman", serif;
+    color: #694555;
+  }
+
+  .profile-contact {
+    background: #f7edef;
+    border-color: #ead8dd;
+  }
+
+  .profile-contact:hover { background: #f2e3e8; }
+
+  .profile-link-primary {
+    background: linear-gradient(110deg, #94566e, #81556e);
+    box-shadow: 0 5px 16px #87556a1a;
+  }
+
+  .profile-link-primary:hover {
+    background: linear-gradient(110deg, #82465e, #70465e);
+  }
+
+  .profile-link-secondary {
+    background: #fffaf7;
+    border-color: #e5cfd7;
+  }
+
+  .profile-link-secondary:hover { background: #f7e9ee; }
+
+  .profile-page :focus-visible {
+    outline: 2px solid #97536b;
+    outline-offset: 4px;
+  }
+
+  .dark .profile-page {
+    background: radial-gradient(ellipse at 12% 15%, #452d3d 0, transparent 48%),
+      radial-gradient(ellipse at 90% 85%, #382c42 0, transparent 45%), #211b24;
+    color: #f2e2e9;
+  }
+
+  .dark .profile-panel { background: #2c232eee; border-color: #503b4b; }
+  .dark .profile-name { color: #f2dce5; }
+  .dark .profile-contact { background: #392b36; border-color: #59404e; }
+  .dark .profile-contact:hover { background: #46323f; }
+  .dark .profile-link-secondary { background: #352935; border-color: #644657; }
+  .dark .profile-link-secondary:hover { background: #483340; }
+}

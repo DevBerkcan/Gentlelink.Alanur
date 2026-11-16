@@ -41,7 +41,7 @@ npm run dev
 - Portfolio: https://www.berkcanMillihuzin.de
 - GitHub: https://github.com/DevBerkcan
 - GentleGroup: https://www.gentlegroup.de
-- LinkedIn: https://www.linkedin.com/in/Alanur-Millihuzin/
+- LinkedIn: https://www.linkedin.com/in/alanur-millihuzin-1aa8bb394/
 - Instagram: https://www.instagram.com/berkcandaily/
 
 ## Contact

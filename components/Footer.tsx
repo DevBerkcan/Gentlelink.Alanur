@@ -13,7 +13,7 @@ export const Footer = () => {
     },
     {
       name: "LinkedIn",
-      href: "https://www.linkedin.com/in/Alanur-Millihuzin/",
+      href: "https://www.linkedin.com/in/alanur-millihuzin-1aa8bb394/",
       icon: Linkedin,
     },
     {

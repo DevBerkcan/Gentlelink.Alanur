@@ -15,7 +15,7 @@ export default function Home() {
   const [isContactOpen, setIsContactOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen transition-colors duration-300 bg-gradient-to-br from-rose-50 via-pink-50 to-fuchsia-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900">
+    <div className="profile-page relative min-h-screen transition-colors duration-300">
       {/* Theme Toggle */}
       <ThemeToggle />
 
@@ -23,11 +23,11 @@ export default function Home() {
       <ShareButton variant="floating" />
 
       {/* Main content */}
-      <main className="relative flex min-h-screen items-center justify-center px-3 sm:px-4 py-6 sm:py-12">
+      <main className="relative flex min-h-screen items-center justify-center px-3 sm:px-4 py-16 sm:py-20">
         {/* Main card container */}
         <div className="w-full max-w-md">
           {/* Card with shadow */}
-          <div className="rounded-2xl sm:rounded-3xl bg-white dark:bg-gray-800 p-5 sm:p-8 shadow-2xl ring-1 ring-gray-200 dark:ring-gray-700 transition-colors duration-300">
+          <div className="profile-panel relative overflow-hidden rounded-[2rem] sm:rounded-[2.5rem] p-6 sm:p-10 transition-colors duration-300">
             {/* Profile section */}
             <ProfileCard onContactClick={() => setIsContactOpen(true)} />
 
@@ -50,8 +50,8 @@ export default function Home() {
           </div>
 
           {/* Decorative glow effects */}
-          <div className="pointer-events-none absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-rose-400/25 blur-3xl" />
-          <div className="pointer-events-none absolute -bottom-20 right-0 h-60 w-60 rounded-full bg-pink-400/20 blur-3xl" />
+          <div className="pointer-events-none absolute -top-20 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-rose-300/15 blur-3xl" />
+          <div className="pointer-events-none absolute -bottom-20 right-0 h-60 w-60 rounded-full bg-pink-300/10 blur-3xl" />
         </div>
       </main>
 
