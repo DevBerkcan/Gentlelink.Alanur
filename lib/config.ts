@@ -43,7 +43,7 @@ export const socialLinks: LinkConfig[] = [
   },
   {
     label: "Instagram",
-    href: "https://www.instagram.com/berkcandaily/",
+    href: "https://www.instagram.com/alanur.alh/",
     icon: Instagram,
     variant: "secondary",
   },

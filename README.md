@@ -42,7 +42,7 @@ npm run dev
 - GitHub: https://github.com/DevBerkcan
 - GentleGroup: https://www.gentlegroup.de
 - LinkedIn: https://www.linkedin.com/in/alanur-millihuzin-1aa8bb394/
-- Instagram: https://www.instagram.com/berkcandaily/
+- Instagram: https://www.instagram.com/alanur.alh/
 
 ## Contact
 
